@@ -80,7 +80,9 @@
       wrapItemInColumn(element, columns) {
           if (columns.constructor === Number) {
               element.wrap(
-                  `<div class='item-column mb-4 col-${Math.ceil(12 / columns)}'></div>`
+                  `<div class='item-column mb-4 col-${Math.ceil(
+                      12 / columns
+                  )}'></div>`
               );
           } else if (columns.constructor === Object) {
               var columnClasses = "";
